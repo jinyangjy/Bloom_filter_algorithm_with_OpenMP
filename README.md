@@ -1,3 +1,5 @@
+<h1>Parallelizing bloom filter algorithm with OpenMP</h1>
+
 The bloom filter algorithm is the technique I've selected to use in this project to achieve the string searching objective. The Bloom filter algorithm is a probabilistic data structure that saves space and may be used to determine if an element is a part of a set. However, because of its probabilistic nature, there is a tradeoff for its efficiency, and it is possible that it will yield a false positive result.False positives arise when it shows that a string may exist but does not really exist.
 
 Variables to take note of:
@@ -11,7 +13,7 @@ N = number of strings being inserted
 The bloom filter algorithm essentially consists of an empty bloom, which is a bit array of m bits with all bits set to 0.In addition, a fixed amount of K number of hash functions should be defined to calculate the hashes for a given string. With the provided hash values, we are able to flip the bit to 1 based on the index in the bloom filter. For example, if we were to hash the string “parallel” 3 times, and receive the value “1,3,7”, the bits for the indices will be flipped to 1. Now, if we were to hash the string and it returns the hash value of “1,3,7” as well. Because "parallel" has already set the bits as the indices, the bloom filter method will assert that it is present, resulting in a false positive. Through the technique of regulating false positive rate we may reduce the likelihood of a false positive by adjusting the size of the bloom filter.
 \
 \
-Development of the Parallel String Mathcing algorithm
+<h2>Development of the Parallel String Mathcing algorithm</h2>
 \
 Pseudocode for the parallise portion
 <p align="center">
