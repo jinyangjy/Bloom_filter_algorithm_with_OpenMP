@@ -11,10 +11,9 @@ K = number of hash functions
 N = number of strings being inserted
 
 The bloom filter algorithm essentially consists of an empty bloom, which is a bit array of m bits with all bits set to 0.In addition, a fixed amount of K number of hash functions should be defined to calculate the hashes for a given string. With the provided hash values, we are able to flip the bit to 1 based on the index in the bloom filter. For example, if we were to hash the string “parallel” 3 times, and receive the value “1,3,7”, the bits for the indices will be flipped to 1. Now, if we were to hash the string and it returns the hash value of “1,3,7” as well. Because "parallel" has already set the bits as the indices, the bloom filter method will assert that it is present, resulting in a false positive. Through the technique of regulating false positive rate we may reduce the likelihood of a false positive by adjusting the size of the bloom filter.
-\
-\
+
 <h2>Development of the Parallel String Mathcing algorithm</h2>
-\
+
 Pseudocode for the parallise portion
 <p align="center">
 <img width="390" alt="Screenshot 2023-09-26 at 01 24 54" src="https://github.com/jinyangjy/Bloom_filter_algorithm_with_OpenMP/assets/107976566/915a50c5-290c-490b-bf8a-bbd7dee9e25a">
