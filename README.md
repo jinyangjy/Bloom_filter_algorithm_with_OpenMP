@@ -18,7 +18,7 @@ Pseudocode for the parallise portion
 <p align="center">
 <img width="390" alt="Screenshot 2023-09-26 at 01 24 54" src="https://github.com/jinyangjy/Bloom_filter_algorithm_with_OpenMP/assets/107976566/915a50c5-290c-490b-bf8a-bbd7dee9e25a">
 </p>
-The primary objective of parallelization is to concurrently process the numerous text files provided, consequently that it eventually attains a reduced computing time. In this particular approach, each text file is denoted as an independent workload, with the objective being the allocation of these workloads among numerous threads. In this approach, data parallelism is accomplished by partitioning the task of processing several text files into separate threads, which can be executed concurrently to exploit parallelism.
+The primary objective of parallelization is to concurrently process the numerous text files provided, consequently that it attains a reduced computing time. In this particular approach, each text file is denoted as an independent workload, with the objective being the allocation of these workloads among numerous threads. In this approach, data parallelism is accomplished by partitioning the task of processing several text files into separate threads, which can be executed concurrently to exploit parallelism.
 
 In order to analyse the given directive, a flow chart will be employed as a visual representation to illustrate the procedure.
 
