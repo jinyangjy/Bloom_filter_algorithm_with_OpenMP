@@ -1,6 +1,6 @@
 <h1>Parallelizing bloom filter algorithm with OpenMP</h1>
 
-The bloom filter algorithm is the technique I've selected to use in this project to achieve the string searching objective. The Bloom filter algorithm is a probabilistic data structure that saves space and may be used to determine if an element is a part of a set. However, because of its probabilistic nature, there is a tradeoff for its efficiency, and it is possible that it will yield a false positive result.False positives arise when it shows that a string may exist but does not really exist.
+The bloom filter algorithm is the technique I've selected to use in this project to achieve the objective of searching a string. The Bloom filter algorithm is a probabilistic data structure that saves space and may be used to determine if an element is a part of a set. However, because of its probabilistic nature, there is a tradeoff for its efficiency, and it is possible that yields a false positive result.False positives arise when it shows that a string may exist but does not really exist.
 
 Variables to take note of:
 \
